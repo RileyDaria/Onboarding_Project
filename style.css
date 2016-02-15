@@ -1,0 +1,131 @@
+  
+@import url(https://fonts.googleapis.com/css?family=Frijole);
+@import url(https://fonts.googleapis.com/css?family=Yantramanav:400,900);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+
+	.header #main_heading{
+	display: inline-block;
+	position:relative;
+	font-family: 'Frijole', cursive;
+	text-align: center;
+	color: #505050 ;
+	font-size:50px;
+	padding-bottom: 10px;
+	padding:5px 20px 25px 10px ;
+	
+	}
+	#heading_button{
+	display: inline-block;
+	float: right;
+	border-left: 2px solid grey;
+
+	border-color: white;
+	font-family: 'Frijole', cursive;
+	cursor: url("pictures/paw_icon.png"), auto;
+	
+	}
+	.buttons{
+		border: 2px solid grey;
+	padding: 1em;
+	/*border-radius: 25px;*/
+	font-family: 'Yantramanav', serif;
+	cursor: url("pictures/paw_icon.png"), auto;
+	
+	}
+	#button_subscribe{
+	background-color: grey;
+	color:white;
+	border-radius: 25px;
+	
+	}
+	.header img{
+	display: inline-block;
+	float:left;
+	max-width:10 px;
+	max-height: 10 px;
+	}
+	body {
+	background-color: #d3a579;
+	margin: 0 15%;
+	background-repeat: no-repeat;
+    background-attachment: fixed;	
+	}
+	#menu {
+	font-family: 'Frijole', cursive;
+    list-style-type: none;
+    margin: 0 0 0.5em 0;
+    padding:  0;
+	max-width:100%;
+    overflow: hidden;
+    background-color: grey;
+	text-align: center;
+	
+
+    }
+		
+	li {
+		float: left;
+		display: inline-block;
+	}
+
+
+
+	li a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+	
+	}
+
+	li a:hover, #heading_button:hover {
+		background-color: #e6cbb2;
+	}
+	a:hover{
+	cursor: url("pictures/paw_icon.png"), auto;
+	}
+
+
+	.fadein img {   
+	position:absolute;
+	left:0;
+	top:0; 
+	height:500px; width:100%; }
+
+	.container{
+	position: relative;
+	}
+
+	.fadein { height:500px; width:100%; 
+	background-color: grey;
+	position: relative;
+	float: center;
+	}
+
+
+
+	#wrapper{
+	font-family: 'Yantramanav', serif;
+	background-color: #e6cbb2;
+	max-width: 500px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5em;
+	margin-top: 5em;
+	margin-bottom: 5em;
+	}
+
+	#email{
+	border-radius: 25px;
+	width: 1000 px;
+	height: 2em;
+	border: 2px solid grey;
+	margin: 5px;
+	}
+	 
+	input,input::-webkit-input-placeholder {
+	 font-size: 30 em;
+		line-height: 2;
+	}
