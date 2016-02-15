@@ -1,13 +1,11 @@
-  
-@import url(https://fonts.googleapis.com/css?family=Frijole);
-@import url(https://fonts.googleapis.com/css?family=Yantramanav:400,900);
-@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
-
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600);
 
 .header #main_heading{
-	/*display: inline-block;*/
+	display: inline-block;
 	position:relative;
-	font-family: 'Frijole', cursive;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700; 
 	text-align: center;
 	color: #505050 ;
 	font-size: 4em;
@@ -16,7 +14,13 @@
 .header{
 	/*margin: 0 25%;*/
 	float: center;
-	margin: 0 0;
+	margin: 1em 2em;
+	background-color: #e6cbb2;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+	padding: 0.1em;
+	border-radius: 0.5em;
+	
 }
 .header img{
 	/*display: inline-block;
@@ -24,14 +28,7 @@
 	max-width:4em;
 	max-height: 4em;
 }
-#heading_button{
-	display: inline-block;
-	float: right;
-	border-left: 2px solid grey;
-	border-color: white;
-	font-family: 'Frijole', cursive;
-	cursor: url("pictures/paw_icon.png"), auto;
-	}
+
 
 
 
@@ -101,16 +98,17 @@ a:hover{
     margin: 0 auto;
 }
 #sign_up_form{
-	font-family: 'Yantramanav', serif;
+	font-family: 'Raleway', sans-serif;
 	background-color: #e6cbb2;
-	max-width: 500px;
+	max-width: 30em;
 	text-align: center;
 	margin: 5em auto 5em 2em;
-	padding-left:5em;
-
-	border-radius: 0.5em;
-	border: 0.05em  solid grey;
 	
+	padding-bottom: 1em;
+	border-radius: 0.5em;
+
+	opacity: 0.9;
+    filter: alpha(opacity=90);
 }
 label{
 	display: block;
@@ -118,6 +116,7 @@ label{
 	text-align: left;
 	max-width: 20em;
 	text-transform: uppercase;
+
 }
 input,#button_subscribe{
 	align: left;
@@ -126,12 +125,21 @@ input,#button_subscribe{
 	border-radius: 0.5em;
 	border: 0.05em  solid grey;
 	
+	
 }
 #button_subscribe{
 	background-color: #505050;
 	color:white;
 	padding: 1em 0;
 	margin-left: 0.5em;
+}
+#header_signup{
+	font-family: 'Raleway', sans-serif;
+	font-weight:600;
+	text-align:left;
+	border-bottom: 1px solid grey;
+	
+	
 }
 #buttom-form{
 	background-color: grey;
