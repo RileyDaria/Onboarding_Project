@@ -1,0 +1,234 @@
+<!-- All pictures are taked from pixaday.com, the are free of copy right
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cutie Pups</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <style>
+  
+@import url(https://fonts.googleapis.com/css?family=Frijole);
+@import url(https://fonts.googleapis.com/css?family=Yantramanav:400,900);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+
+	.header #main_heading{
+	display: inline-block;
+	position:relative;
+	font-family: 'Frijole', cursive;
+	text-align: center;
+	color: #505050 ;
+	font-size:50px;
+	padding-bottom: 10px;
+	padding:5px 20px 25px 10px ;
+	
+	}
+	#heading_button{
+	display: inline-block;
+	float: right;
+	border-left: 2px solid grey;
+
+	border-color: white;
+	font-family: 'Frijole', cursive;
+	cursor: url("pictures/paw_icon.png"), auto;
+	
+	}
+	.buttons{
+		border: 2px solid grey;
+	padding: 1em;
+	/*border-radius: 25px;*/
+	font-family: 'Yantramanav', serif;
+	cursor: url("pictures/paw_icon.png"), auto;
+	
+	}
+	#button_subscribe{
+	background-color: grey;
+	color:white;
+	border-radius: 25px;
+	
+	}
+	.header img{
+	display: inline-block;
+	float:left;
+	max-width:10 px;
+	max-height: 10 px;
+	}
+	body {
+	background-color: #d3a579;
+	margin: 0 15%;
+	background-repeat: no-repeat;
+    background-attachment: fixed;	
+	}
+	#menu {
+	font-family: 'Frijole', cursive;
+    list-style-type: none;
+    margin: 0 0 0.5em 0;
+    padding:  0;
+	max-width:100%;
+    overflow: hidden;
+    background-color: grey;
+	text-align: center;
+	
+
+    }
+		
+	li {
+		float: left;
+		display: inline-block;
+	}
+
+
+
+	li a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+	
+	}
+
+	li a:hover, #heading_button:hover {
+		background-color: #e6cbb2;
+	}
+	a:hover{
+	cursor: url("pictures/paw_icon.png"), auto;
+	}
+
+
+	.fadein img {   
+	position:absolute;
+	left:0;
+	top:0; 
+	height:500px; width:100%; }
+
+	.container{
+	position: relative;
+	}
+
+	.fadein { height:500px; width:100%; 
+	background-color: grey;
+	position: relative;
+	float: center;
+	}
+
+
+
+	#wrapper{
+	font-family: 'Yantramanav', serif;
+	background-color: #e6cbb2;
+	max-width: 500px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5em;
+	margin-top: 5em;
+	margin-bottom: 5em;
+	}
+
+	#email{
+	border-radius: 25px;
+	width: 1000 px;
+	height: 2em;
+	border: 2px solid grey;
+	margin: 5px;
+	}
+	 
+	input,input::-webkit-input-placeholder {
+	 font-size: 30 em;
+		line-height: 2;
+	}
+  </style>
+
+
+</head>
+<body>
+<ul id="menu">
+
+  <li ><a  class="active"  href="index.html">Home</a></li>
+  <li><a href="index.html" >Galery</a></li>
+   <li id= "heading_button" class="buttons">Click here to Subscribe</li>
+</ul>
+</nav>
+<div class="header">
+  <img  src="pictures/pet-paw-hi.png" width="150em" height="150em"/>
+  <h1 id= "main_heading">Cutie Pups</h1>
+ 
+  </div>
+  <nav>
+<div class="container">
+ 
+  
+  <div class="fadein" >
+   
+     <img  name="slide" src="pictures/pup.jpg">
+   
+     <img  name="slide" src="pictures/puppies.jpg">
+  
+     <img  name="slide" src="pictures/pug.jpg">
+  
+     <img  name="slide" src="pictures/white_pup.jpg">
+ 
+     <img  name="slide" src="pictures/chihuahua.jpg">
+ 
+     <img  name="slide" src="pictures/doggy.jpg">
+   
+</div>
+</div>
+<div id="subscribe_field">
+ <div id="wrapper"> <h2>If you would like to see more pictures enter your email here:</h2><br>
+ <input type= "text" id="email" placeholder = " your@email.com"></input><br>
+ <h3 id = "button_subscribe" class="buttons">Subscribe</h3>
+ <div id="output"></div>
+</div>
+</div>
+</body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script > 
+  /*this code is taken from http://snook.ca/technical/fade/fade.html */
+$(function(){
+    $('.fadein img:gt(0)').hide();
+    setInterval(function(){
+	$('.fadein  :first-child').fadeOut().next('img').fadeIn()
+	.end().appendTo('.fadein');}, 3000);
+});
+
+
+
+
+/*this javascript code is taken from http://stackoverflow.com/questions/4801655/how-to-go-to-a-specific-element-on-page */
+	var button_top = document.getElementById('heading_button');
+	button_top.addEventListener('click',function(){
+	window.scroll(0,findPos(document.getElementById('wrapper')));;
+	});
+	
+	function findPos(obj) {
+    var curtop = 0;
+    if (obj.offsetParent) {
+        do {
+            curtop += obj.offsetTop;
+        } while (obj = obj.offsetParent);
+    return [curtop];
+    }
+}
+	var button_bottom = document.getElementById('button_subscribe');
+	button_bottom.addEventListener('click', function(){
+	/*this code was taken from http://stackoverflow.com/questions/20301237/javascript-form-validating-e-mail-address-and-checking-another-field-with-star
+	and modified by me*/
+	var email = document.getElementById('email').value;
+	
+	var email_filter= /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
+	
+	var result = document.getElementById('output');
+	
+	if(!email_filter.test(email)){
+		alert('You entered invalid email!\nTry again');
+			}
+		else
+		result.innerHTML = 'You have succesfully subscribed to out mailing list!\nThank you!';
+		
+	
+	}
+);
+</script>
+</html>
