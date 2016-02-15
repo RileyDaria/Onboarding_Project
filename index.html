@@ -4,60 +4,58 @@
 -->
 <html lang="en">
 <head>
-  <title>Cutie Pups</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+	<title>Cutie Pups</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
 	<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
+</head>
+
 <body>
-<ul id="menu">
+	<ul id="menu">
+		<li><a  class="active"  href="index.html">Home</a></li>
+		<li><a href="index.html" >Galery</a></li>
+		<li id= "heading_button" class="buttons">Click here to Subscribe</li>
+	</ul>
 
-  <li ><a  class="active"  href="index.html">Home</a></li>
-  <li><a href="index.html" >Galery</a></li>
-   <li id= "heading_button" class="buttons">Click here to Subscribe</li>
-</ul>
-
-<div class="header">
-  <img  src="pictures/pet-paw-hi.png" width="150em" height="150em"/>
-  <h1 id= "main_heading">Cutie Pups</h1>
- 
-  </div>
+	<div class="header">
+		<img  src="pictures/pet-paw-hi.png" width="150em" height="150em"/>
+		<h1 id= "main_heading">Cutie Pups</h1>
+	</div>
   
-<div class="container">
- 
-  
-  <div class="fadein" >
+	<div class="container">
+		<div class="image-gallery" >
    
-     <img src="pictures/pup.jpg">
+			<img src="pictures/pup.jpg">
    
-     <img  src="pictures/puppies.jpg">
+			<img  src="pictures/puppies.jpg">
   
-     <img  src="pictures/pug.jpg">
+			<img  src="pictures/pug.jpg">
   
-     <img  src="pictures/white_pup.jpg">
+			<img  src="pictures/white_pup.jpg">
  
-     <img  src="pictures/chihuahua.jpg">
+			<img  src="pictures/chihuahua.jpg">
  
-     <img  src="pictures/doggy.jpg">
+			<img  src="pictures/doggy.jpg">
    
-</div>
-</div>
-<div id="subscribe_field">
- <div id="wrapper"> <h2>If you would like to see more pictures enter your email here:</h2><br>
- <input type= "text" id="email" placeholder = " your@email.com"></input><br>
- <h3 id = "button_subscribe" class="buttons">Subscribe</h3>
- <div id="output"></div>
-</div>
-</div>
+		</div>
+	</div>
+	
+	<div id="wrapper">
+		<h2>If you would like to see more pictures enter your email here:</h2><br>
+		<input type= "text" id="email" placeholder = " your@email.com"></input><br>
+		<h3 id = "button_subscribe" class="buttons">Subscribe</h3>
+		<div id="output"></div>
+	</div>
+	
 </body>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script > 
   /*this code is taken from http://snook.ca/technical/fade/fade.html */
 $(function(){
-    $('.fadein img:gt(0)').hide();
+    $('.image-gallery img:gt(0)').hide();
     setInterval(function(){
-	$('.fadein  :first-child').fadeOut().next('img').fadeIn()
-	.end().appendTo('.fadein');}, 3000);
+	$('.image-gallery  :first-child').fadeOut().next('img').fadeIn()
+	.end().appendTo('.image-gallery');}, 3000);
 });
 
 
