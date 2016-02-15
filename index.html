@@ -11,107 +11,37 @@
 </head>
 
 <body>
-	<!--<ul id="menu">
-		<li><a  class="active"  href="index.html">Home</a></li>
-		<li><a href="index.html" >Galery</a></li>
-		<!--<li id= "heading_button" class="buttons">Click here to Subscribe</li>
-	</ul>
--->
 	<div class="header">
 		
-		<h1 id= "main_heading">Cutie Pups
-		
-		</h1><img  src="pictures/pet-paw-hi.png" />
+		<h1 id= "main_heading">Cutie Pups</h1>
+		<div id="heading_bottom">Image Gallery</div>
 	</div>
-	<!--		<div class="image-gallery" >
-			
-			<img src="pictures/pup.jpg">
-   
-			<img  src="pictures/puppies.jpg">
-  
-			<img  src="pictures/pug.jpg">
-
-  
-			<img  src="pictures/white_pup.jpg">
- 
-			<img  src="pictures/chihuahua.jpg">
- 
-			<img  src="pictures/doggy.jpg">
-   
-		</div>
-  
-	<div class="container">
-		<div class="image-gallery" >
-   
-			<img src="pictures/pup.jpg">
-   
-			<img  src="pictures/puppies.jpg">
-  
-			<img  src="pictures/pug.jpg">
-  
-			<img  src="pictures/white_pup.jpg">
- 
-			<img  src="pictures/chihuahua.jpg">
- 
-			<img  src="pictures/doggy.jpg">
-   
-		</div>
-	</div>
-	-->	
+	
 	<form id="sign_up_form">
-		<h1 id="header_signup">Sign up</h1>
-		<label>First Name <input type= "text" id="first_name" placeholder = " what is you first name?"></input></label>
-		</label>
-		<label>Last Name <input type= "text" id="last_name" placeholder = " what is you last name?"></input></label>
-		</label>
-		<label>Email Address <input type= "text" id="email" placeholder = " your@email.com"></input></label>
-		<h3 id = "button_subscribe" class="buttons">Subscribe</h3>
+		<h1 id="header_signup">Sign up for updates</h1>
+		
+			<label>First Name </label>
+				<input type= "text" id="first_name" placeholder = " what is you first name?">
+			<label>Last Name </label>
+				<input type= "text" id="last_name" placeholder = " what is you last name?">
+			<label>Email Address (required) </label>
+				<input type= "text" id="email" placeholder = " your@email.com">
+			<h3 id = "button_subscribe" >Subscribe</h3>
+		
 		<div id="output"></div>
 	</form>
-	<!--
-	<div id="buttom-form">
-		<div id = "buttom-center">
-		<h3 id = "button_subscribe" class="buttons">Subscribe</h3>
-		</div>
-	</div>
 
-
-</body>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script > 
-  /*this code is taken from http://snook.ca/technical/fade/fade.html */
-/*$(function(){
-    $('.image-gallery img:gt(0)').hide();
-    setInterval(function(){
-	$('.image-gallery  :first-child').fadeOut().next('img').fadeIn()
-	.end().appendTo('.image-gallery');}, 3000);
-});*/
-
-
-
-
-/*this javascript code is taken from http://stackoverflow.com/questions/4801655/how-to-go-to-a-specific-element-on-page */
-	var button_top = document.getElementById('heading_button');
-	button_top.addEventListener('click',function(){
-	window.scroll(0,findPos(document.getElementById('wrapper')));;
-	});
-	
-	function findPos(obj) {
-    var curtop = 0;
-    if (obj.offsetParent) {
-        do {
-            curtop += obj.offsetTop;
-        } while (obj = obj.offsetParent);
-    return [curtop];
-    }
-}
+   <script > 
+ 
 	var button_bottom = document.getElementById('button_subscribe');
 	button_bottom.addEventListener('click', function(){
-	/*this code was taken from http://stackoverflow.com/questions/20301237/javascript-form-validating-e-mail-address-and-checking-another-field-with-star
+	/*this code was taken from http://stacko
+	verflow.com/questions/20301237/javascript-form-
+	validating-e-mail-address-and-checking-another-field-with-star
 	and modified by me*/
 	var email = document.getElementById('email').value;
 	
-	var email_filter= /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
+	var email_filter= /^.+@.+$/;
 	
 	var result = document.getElementById('output');
 	
@@ -119,10 +49,13 @@
 		alert('You entered invalid email!\nTry again');
 			}
 		else
-		result.innerHTML = 'You have succesfully subscribed to out mailing list!\nThank you!';
+		result.innerHTML = 'You have succesfully subscribed to out mailing list!'
+							+'\nThank you!';
 		
 	
 	}
 );
-</script>
+
+	</script>
+</body>
 </html>

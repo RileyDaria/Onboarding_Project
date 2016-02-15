@@ -2,36 +2,35 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,600);
 
 .header #main_heading{
-	display: inline-block;
-	position:relative;
+	/*display: inline-block;*/
+	
 	font-family: 'Nunito', sans-serif;
 	font-weight: 700; 
-	text-align: center;
-	color: #505050 ;
-	font-size: 4em;
-	/*padding:5px 20px 25px 10px ;*/
+	text-align: right;
+	padding-right: 0.5em;
+	font-size: 6em;
+	margin: 0 0 ;
+	text-transform: uppercase;
 	}
+.header #heading_bottom{
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	text-align: right;
+	padding-bottom:1em;
+	padding-right: 2em;
+	font-size: 2em;
+}
 .header{
 	/*margin: 0 25%;*/
 	float: center;
 	margin: 1em 2em;
 	background-color: #e6cbb2;
-	opacity: 0.9;
-    filter: alpha(opacity=90);
-	padding: 0.1em;
+	opacity: 0.7;
+    filter: alpha(opacity=70);
+
 	border-radius: 0.5em;
 	
 }
-.header img{
-	/*display: inline-block;
-	float:left;*/
-	max-width:4em;
-	max-height: 4em;
-}
-
-
-
-
 body {
 	background-color: #d3a579;
 	margin: 0 0 15% 0;
@@ -39,68 +38,12 @@ body {
 
 	background: transparent url("pictures/chihuahua-1.jpg");
 	background-repeat: no-repeat ;
-	background-size:cover;
-
-	
-	
-}
-#menu {
-	font-family: 'Frijole', cursive;
-    list-style-type: none;
-    margin: 0 0 0.5em 0;
-    padding:  0;
-	max-width:100%;
-    overflow: hidden;
-    background-color: grey;
-	text-align: center;
-}
-li {/
-	float: center;
-	display: inline-block;
-}
-li a {
-	display: inline-block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-}
-li a:hover, #heading_button:hover {
-	background-color: #e6cbb2;
-}
-a:hover{
-	cursor: url("pictures/paw_icon.png"), auto;
-}
-.image-gallery img {   
-	/*position:absolute;*/
-
-	height:50%; 
-	width:32.65%;
-	
-	/*display: inline-block
-	float: left;*/
-	 margin-left: auto !important;
-   margin-right: auto !important;
-	border: 5px solid #e6cbb2;
-	
-	/*position: center;*/
-}
-.container{
-	position: relative;
-}
-
-.image-gallery { 
-	height:500px; 
-	width:100%; 
-	/*background-color: grey;*/
-	position: relative;
-	float: center;
-	display: table;
-    margin: 0 auto;
+	background-size:cover;	
 }
 #sign_up_form{
 	font-family: 'Raleway', sans-serif;
 	background-color: #e6cbb2;
-	max-width: 30em;
+	max-width: 26em;
 	text-align: center;
 	margin: 5em auto 5em 2em;
 	
@@ -132,33 +75,17 @@ input,#button_subscribe{
 	color:white;
 	padding: 1em 0;
 	margin-left: 0.5em;
+	cursor: pointer;
 }
 #header_signup{
 	font-family: 'Raleway', sans-serif;
 	font-weight:600;
 	text-align:left;
 	border-bottom: 1px solid grey;
-	
-	
+	text-transform: uppercase;
+	color: grey;
+	padding: 0.5em;
 }
-#buttom-form{
-	background-color: grey;
-	max-width:100%;
-	height: 100px;
-	padding: 10px;
-}
-#buttom-center{
-	border: 0.5em solid #505050;
-	width: 50em;
-	height: 10em;
-	background-color: #e6cbb2;
-	float: center;
-	position: relative;
-	text-align: center;
-	margin: -30px auto -5% auto;
-	border-radius: 7em;
-}
-
 input,input::-webkit-input-placeholder {
 
 	line-height: 2;
