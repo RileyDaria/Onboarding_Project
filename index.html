@@ -20,11 +20,27 @@
 	<div class="header">
 		
 		<h1 id= "main_heading">Cutie Pups
-		<img  src="pictures/pet-paw-hi.png" width="150em" height="150em"/>
+		<!--<img  src="pictures/pet-paw-hi.png" width="150em" height="150em"/>-->
 		</h1>
-	</div>
+	<!--</div>
+			<div class="image-gallery" >
+			
+			<img src="pictures/pup.jpg">
+   
+			<img  src="pictures/puppies.jpg">
   
-	<!--<div class="container">
+			<img  src="pictures/pug.jpg">
+
+  
+			<img  src="pictures/white_pup.jpg">
+ 
+			<img  src="pictures/chihuahua.jpg">
+ 
+			<img  src="pictures/doggy.jpg">
+   
+		</div>
+  
+	<div class="container">
 		<div class="image-gallery" >
    
 			<img src="pictures/pup.jpg">
@@ -40,29 +56,36 @@
 			<img  src="pictures/doggy.jpg">
    
 		</div>
-	</div>-->
-	
-	<div id="wrapper">
-		<h2>If you would like to see more pictures enter your email here:</h2><br>
-		<input type= "text" id="email" placeholder = " your@email.com"></input><br>
+	</div>
+	-->	
+	<form id="sign_up_form">
+		<h1 id="header_signup">Sign up</h1>
+		<label>First Name <input type= "text" id="first_name" placeholder = " what is you first name?"></input></label>
+		</label>
+		<label>Last Name <input type= "text" id="last_name" placeholder = " what is you last name?"></input></label>
+		</label>
+		<label>Email Address <input type= "text" id="email" placeholder = " your@email.com"></input></label>
 		<h3 id = "button_subscribe" class="buttons">Subscribe</h3>
 		<div id="output"></div>
-	</div>
-	
+	</form>
+	<!--
 	<div id="buttom-form">
-		<div id = "buttom-center">SOme text</div>
+		<div id = "buttom-center">
+		<h3 id = "button_subscribe" class="buttons">Subscribe</h3>
+		</div>
 	</div>
-	
+
+
 </body>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script > 
   /*this code is taken from http://snook.ca/technical/fade/fade.html */
-$(function(){
+/*$(function(){
     $('.image-gallery img:gt(0)').hide();
     setInterval(function(){
 	$('.image-gallery  :first-child').fadeOut().next('img').fadeIn()
 	.end().appendTo('.image-gallery');}, 3000);
-});
+});*/
 
 
 

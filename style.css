@@ -10,19 +10,19 @@
 	font-family: 'Frijole', cursive;
 	text-align: center;
 	color: #505050 ;
-	font-size:100px;
-	padding-bottom: 10px;
-	padding:5px 20px 25px 10px ;
+	font-size: 4em;
+	/*padding:5px 20px 25px 10px ;*/
 	}
 .header{
 	/*margin: 0 25%;*/
 	float: center;
+	margin: 0 0;
 }
 .header img{
 	/*display: inline-block;
 	float:left;*/
-	max-width:8 px;
-	max-height: 8 px;
+	max-width:4em;
+	max-height: 4em;
 }
 #heading_button{
 	display: inline-block;
@@ -32,24 +32,20 @@
 	font-family: 'Frijole', cursive;
 	cursor: url("pictures/paw_icon.png"), auto;
 	}
-.buttons{
-		border: 2px solid grey;
-	padding: 1em;
-	/*border-radius: 25px;*/
-	font-family: 'Yantramanav', serif;
-	cursor: url("pictures/paw_icon.png"), auto;
-	}
-#button_subscribe{
-	background-color: grey;
-	color:white;
-	border-radius: 25px;
-}
+
+
 
 body {
 	background-color: #d3a579;
 	margin: 0 0 15% 0;
 	background-repeat: no-repeat;
-    background-attachment: fixed;	
+
+	background: transparent url("pictures/chihuahua-1.jpg");
+	background-repeat: no-repeat ;
+	background-size:cover;
+
+	
+	
 }
 #menu {
 	font-family: 'Frijole', cursive;
@@ -61,7 +57,7 @@ body {
     background-color: grey;
 	text-align: center;
 }
-li {
+li {/
 	float: center;
 	display: inline-block;
 }
@@ -78,33 +74,64 @@ a:hover{
 	cursor: url("pictures/paw_icon.png"), auto;
 }
 .image-gallery img {   
-	position:absolute;
-	left:0;
-	top:0; 
-	height:500px; width:100%; 
+	/*position:absolute;*/
+
+	height:50%; 
+	width:32.65%;
+	
+	/*display: inline-block
+	float: left;*/
+	 margin-left: auto !important;
+   margin-right: auto !important;
+	border: 5px solid #e6cbb2;
+	
+	/*position: center;*/
 }
 .container{
 	position: relative;
 }
+
 .image-gallery { 
-	height:500px; width:100%; 
-	background-color: grey;
+	height:500px; 
+	width:100%; 
+	/*background-color: grey;*/
 	position: relative;
 	float: center;
+	display: table;
+    margin: 0 auto;
 }
-#wrapper{
+#sign_up_form{
 	font-family: 'Yantramanav', serif;
 	background-color: #e6cbb2;
 	max-width: 500px;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 5em;
-	margin-top: 5em;
-	margin-bottom: 0;
-	border-top-right-radius: 7em;
-	border-top-left-radius: 7em;
-	border: 0.5em solid grey;
+	margin: 5em auto 5em 2em;
+	padding-left:5em;
+
+	border-radius: 0.5em;
+	border: 0.05em  solid grey;
+	
+}
+label{
+	display: block;
+	padding: 0.5em;
+	text-align: left;
+	max-width: 20em;
+	text-transform: uppercase;
+}
+input,#button_subscribe{
+	align: left;
+	width: 25em;
+	font-size: 1em;
+	border-radius: 0.5em;
+	border: 0.05em  solid grey;
+	
+}
+#button_subscribe{
+	background-color: #505050;
+	color:white;
+	padding: 1em 0;
+	margin-left: 0.5em;
 }
 #buttom-form{
 	background-color: grey;
@@ -123,14 +150,8 @@ a:hover{
 	margin: -30px auto -5% auto;
 	border-radius: 7em;
 }
-#email{
-	border-radius: 25px;
-	width: 1000 px;
-	height: 2em;
-	border: 2px solid grey;
-	margin: 5px;
-}
+
 input,input::-webkit-input-placeholder {
-	font-size: 30 em;
+
 	line-height: 2;
 }
